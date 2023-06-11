@@ -1,0 +1,435 @@
+header {
+  background-image: url('https://cutewallpaper.org/28/desktop-wallpaper-minimalist-pink/2925317718.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+.search-button {
+  margin-left: 8px;
+  padding: 16px 16px;
+  background-color: #e96790;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  flex-wrap: warp;
+}
+
+.side1 {
+  flex: 10%;
+  background-image: url('https://i.etsystatic.com/27176604/r/il/1234c5/2797012460/il_fullxfull.2797012460_c0bz.jpg');
+  padding: 20px;
+}
+
+.side2 {
+  flex: 10%;
+  background-image: url('https://pbs.twimg.com/media/EZ3HMnaWoAUqpgI.jpg');
+  padding: 20px;
+}
+
+main {
+  flex: 80%;
+  background-color: pink;
+  padding: 20px;
+}
+
+
+.cart {
+  float: right;
+}
+
+/* navigation bar */
+.navbar {
+  width: 100%;
+  background-color: pink;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #6b2d54;
+}
+
+/* Current navbar */
+.active {
+  background-color: #6b2d54;
+}
+
+/* Add responsiveness */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  /* for mobile phones */
+}
+
+/* hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #6b2d54;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #6b2d54;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.nav-right {
+  float: right;
+}
+
+\200\300 * {
+  box-sizing: border-box
+}
+
+/* Slideshow */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #6b2d54;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* slideshow indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active2,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+.padding1 {
+  padding: 50px;
+  background-color: pink;
+  color: white;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #c13599;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover {
+  padding-right: 25px;
+}
+
+.button:hover:after {
+  opacity: 1;
+  right: 0;
+}
+
+.padding2 {
+  padding: 50px;
+  background-color: white;
+  color: white;
+}
+
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 27%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 #6b2d54;
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+  background-color: pink;
+  height: 4cm;
+}
+
+/* Clear floats */
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(97, 41, 74);
+}
+
+.button2 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #6b2d54;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button2:hover {
+  background-color: rgb(97, 41, 74);
+}
+
+.rate {
+  color: #c13599;
+}
+
+.container2 {
+  padding: 0 16px;
+  background-color: pink;
+  height: 4cm;
+}
+
+/* Clear floats */
+.container2::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+footer {
+  background-color: pink;
+  height: 100px;
+  width: 100%;
+  margin-top: 10px;
+  color: white;
+}
+
+.footer-font {
+  font-size: 20px;
+}
+
+.footer-text {
+  float: right;
+  font-size: 14px;
+  color: #6b2d54;
+  line-height: 20px;
+  margin-top: 10px;
+  padding: 30px;
+  text-align: center;
+}
+
+.footer-logo {
+  float: right;
+  margin-right: 1em;
+  margin-top: 9px;
+  line-height: 30px;
+  padding: 30px;
+  font-size: 20px;
+}
+
+
+.footer-container {
+  padding: 30px;
+  background-color: pink;
+}
+
+
+
+/*
+input[type=text],
+input[type=submit] {
+  width: 30%;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 10px;
+}
+
+input[type=submit] {
+  background-color: #6b2d54;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+*/

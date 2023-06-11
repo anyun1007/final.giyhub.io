@@ -1,0 +1,118 @@
+<%@ page import = "java.sql.*, java.util.*"%>
+<%@ page language="java" contentType="text/html" pageEncoding="UTF-8"%>
+<%@include file="config.jsp" %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員註冊</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sign.css">
+    
+</head>
+<body>
+    <header>
+    
+        <div class="navbar">
+          <a class="active" href="index.jsp"><i class="fa fa-fw fa-home"></i> Home</a>
+          <div class="dropdown">
+            <button class="dropbtn"><i class="fa fa-fw fa-search"></i>商品列表
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="clothesmenu.html">服飾</a> 
+              <a href="accessorymenu.html">配飾</a> 
+              <a href="3cmenu.html">3C</a> 
+              <!--p
+              <a href="clothes1.html">碎花上衣</a>
+              <a href="clothes2.html">手做拼接洋裝</a>
+              <a href="clothes3.html">燈心絨外套</a>
+              <a href="accessory1.html">字母項鍊</a>
+              <a href="accessory2.html">鴨舌帽</a>
+              <a href="accessory3.html">衝浪手環</a>
+              <a href="camera.html">vintage 相機</a>
+              <a href="bag.html">經典背包粉紅色</a>
+              <a href="sunglass.html">時尚太陽鏡</a>
+              -->
+            </div>
+          </div>
+    
+          <a href="aboutus.jsp">關於我們</a>
+    
+          <div class="nav-right"><a href="contact.jsp"><i class="fa fa-fw fa-envelope"></i> 聯絡我們</a>
+          <div class="dropdown">
+            <button class="dropbtn"><i class="fa fa-fw fa-search"></i>會員中心
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="member.jsp">會員資料查詢</a> 
+              <a href="record.jsp">會員訂單紀錄</a> 
+            </div>
+          </div>
+          <a href="login.jsp"><i class="fa fa-fw fa-user"></i> 登入</a>
+          </div>
+    
+          <div class="cart">
+            <a href="cart.jsp"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
+            </a>
+          </div>
+        </div>
+    </header>
+
+    <div class="row">
+      <div class="side1"></div>
+
+      <main>
+        <section>
+          <div class="sign">
+            <p class="title">會員註冊</p>
+            <hr style="width: 450px;">
+            <form method="post" action="signup_add.jsp">
+              姓名Name:<br>
+              <input type="text" name="name" size="20"><br>
+              電話Phone:<br>
+              <input type="text" name="phone" size="20"><br>
+              地址Address:<br>
+              <input type="text" name="address" size="20"><br>
+              信箱Email:<br>
+              <input type="text" name="email" size="20"><br>
+              密碼Password:<br>
+              <input type="text" name="password" size="20"><br>
+              <input type="submit" value="註冊">
+          </form>
+          <p style="text-align: center; margin-top:10px;">Have an account!?&nbsp;&nbsp;&nbsp;<a href="login.jsp">Sign In</a></p>
+          </div>
+        </section>                                                                                                            
+
+        <footer>
+          <div class="footer-text">
+          <div class="brand-area">
+            <a class="brand-logo"><img class="brand-image" src="image/logo.jpeg" width="150" height="50"  /></a>
+          </div>
+          <p>234 桃園市中壢區,台灣</p> 
+          <P>Call us: 0900-000-000</P>
+          <p>Email: twicebutnice@gmail.com</p>
+          </div>
+           
+          <!--p
+          <div class="footer-brand">
+              <h2>聯絡我們!</h2>
+            <div class="footer-container" style="background-color:pink ">
+              <input type="text" placeholder="Email" name="mail" required><br>
+              <input type="text" placeholder="有什麼要對我們說的 ! !" name="txt" required>
+            </div>
+          
+            <div class="footer-container">
+              <input type="submit" value="submit">
+            </div>
+          </div>
+          -->
+        </footer>
+        </main>
+        <div class="side2"></div>
+          
+        </body>
+        </html>

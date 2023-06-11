@@ -1,0 +1,39 @@
+.sign {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: warp;
+}
+
+.side1 {
+    flex: 10%;
+    background-image: url('https://i.etsystatic.com/27176604/r/il/1234c5/2797012460/il_fullxfull.2797012460_c0bz.jpg');
+    padding: 20px;
+}
+
+.side2 {
+    flex: 10%;
+    background-image: url('https://pbs.twimg.com/media/EZ3HMnaWoAUqpgI.jpg');
+    padding: 20px;
+}
+
+.title {
+    font-size: 50px;
+    color: #990033;
+    font-weight: bold;
+}
+
+input[type=text],
+input[type=submit] {
+    width: 30%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+

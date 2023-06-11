@@ -1,0 +1,22 @@
+.member {
+    background-color: white;
+    font-style: 微軟正黑體;
+    color: #990033;
+    text-align: center;
+}
+
+.title {
+    padding: 2px;
+    color: pink;
+    text-align: left;
+}
+
+input[type=text],
+input[type=submit] {
+    width: 30%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}

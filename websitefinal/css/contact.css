@@ -1,0 +1,25 @@
+.row {
+    display: flex;
+    flex-wrap: warp;
+}
+
+.side1 {
+    flex: 10%;
+    background-image: url('https://i.etsystatic.com/27176604/r/il/1234c5/2797012460/il_fullxfull.2797012460_c0bz.jpg');
+    padding: 20px;
+}
+
+.side2 {
+    flex: 10%;
+    background-image: url('https://pbs.twimg.com/media/EZ3HMnaWoAUqpgI.jpg');
+    padding: 20px;
+}
+
+.caption {
+    font-size: 36px;
+}
+
+.e {
+    padding: 10px 10px 10px 30px;
+    border-radius: 5px;
+}
